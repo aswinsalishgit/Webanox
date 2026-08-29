@@ -11,6 +11,7 @@
   --color-accent: #A41822;
 
   --font-sans: var(--font-michroma), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-tagline: var(--font-b612), sans-serif;
 }
 
 :root {

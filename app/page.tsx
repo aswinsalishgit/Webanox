@@ -12,8 +12,8 @@ export default function Home() {
       <section className="page-container mt-20 md:mt-24 lg:mt-28">
         <div className="swiss-grid">
           <div className="col-span-4 md:col-span-6 lg:col-span-10 flex flex-col items-start">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#686868] mb-4">
-              Webanox Studio
+            <span className="font-tagline text-xs font-semibold uppercase tracking-widest text-[#686868] mb-4">
+              SMARTER SCREENS - BETTER BUSINESS
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-[75px] leading-[1.2] font-medium tracking-tight text-[#313031] mb-6">
               Digital systems for modern cinema.
