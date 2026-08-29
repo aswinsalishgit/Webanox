@@ -9,16 +9,16 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-32 pb-32">
       {/* Hero Section */}
-      <section className="page-container mt-24 md:mt-32 lg:mt-40">
+      <section className="page-container mt-20 md:mt-24 lg:mt-28">
         <div className="swiss-grid">
           <div className="col-span-4 md:col-span-6 lg:col-span-10 flex flex-col items-start">
-            <span className="text-xs font-semibold uppercase tracking-widest text-[#686868] mb-6">
+            <span className="text-xs font-semibold uppercase tracking-widest text-[#686868] mb-4">
               Webanox Studio
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-[75px] leading-[1.2] font-medium tracking-tight text-[#313031] mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-[75px] leading-[1.2] font-medium tracking-tight text-[#313031] mb-6">
               Digital systems for modern cinema.
             </h1>
-            <p className="text-lg md:text-xl text-[#686868] max-w-2xl leading-relaxed mb-12">
+            <p className="text-lg md:text-xl text-[#686868] max-w-2xl leading-relaxed mb-8">
               Webanox designs and builds websites, software, apps, and identities
               for businesses that live on screen.
             </p>
