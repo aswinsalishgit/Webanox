@@ -20,18 +20,17 @@ export function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-[#F7F7F5]/80 backdrop-blur-md border-b border-[#DCDCDC]">
       <div className="page-container h-16 flex items-center justify-between">
-        <Link href="/" className="relative z-50 flex items-center gap-2 group">
-          <div className="relative w-8 h-8 flex items-center justify-center">
+        <Link href="/" className="relative z-50 flex items-center group">
+          <div className="relative w-40 h-10 flex items-center justify-start">
             <Image 
-              src="/icon.png" 
+              src="/banner.png" 
               alt="Webanox Logo" 
-              width={32} 
-              height={32} 
-              className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+              width={160} 
+              height={40} 
+              className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105 origin-left"
               priority
             />
           </div>
-          <span className="font-bold text-lg tracking-tight text-[#313031]">Webanox</span>
         </Link>
 
         {/* Desktop Navigation */}
