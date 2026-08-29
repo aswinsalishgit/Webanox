@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F7F7F5;
+  --color-surface: #FFFFFF;
+  --color-primary: #111111;
+  --color-secondary: #686868;
+  --color-muted: #999999;
+  --color-border: #DCDCDC;
+  --color-strong-border: #BDBDBD;
+  --color-accent: #1E1E1E;
+
+  --font-sans: var(--font-geist-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+:root {
+  --background: #F7F7F5;
+  --foreground: #111111;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Swiss layout utilities */
+@layer utilities {
+  .page-container {
+    @apply mx-auto w-full max-w-[1920px] px-[20px] lg:px-[clamp(20px,3vw,48px)];
+  }
+  
+  .swiss-grid {
+    @apply grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-5;
+  }
+}
+
+/* Base element resets or enhancements */
+::selection {
+  background: #111111;
+  color: #F7F7F5;
+}
+
+/* Remove default focus outline and add a custom one */
+*:focus-visible {
+  outline: 2px solid #1E1E1E;
+  outline-offset: 2px;
+}
