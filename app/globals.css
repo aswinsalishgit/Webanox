@@ -3,20 +3,19 @@
 @theme {
   --color-background: #F7F7F5;
   --color-surface: #FFFFFF;
-  --color-primary: #111111;
+  --color-primary: #313031;
   --color-secondary: #686868;
   --color-muted: #999999;
   --color-border: #DCDCDC;
   --color-strong-border: #BDBDBD;
-  --color-accent: #1E1E1E;
+  --color-accent: #A41822;
 
-  --font-sans: var(--font-geist-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --font-sans: var(--font-outfit), "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 :root {
   --background: #F7F7F5;
-  --foreground: #111111;
+  --foreground: #313031;
 }
 
 body {
@@ -40,12 +39,12 @@ body {
 
 /* Base element resets or enhancements */
 ::selection {
-  background: #111111;
-  color: #F7F7F5;
+  background: #A41822;
+  color: #FFFFFF;
 }
 
 /* Remove default focus outline and add a custom one */
 *:focus-visible {
-  outline: 2px solid #1E1E1E;
+  outline: 2px solid #A41822;
   outline-offset: 2px;
 }
