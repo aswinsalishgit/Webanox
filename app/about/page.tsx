@@ -13,7 +13,7 @@ export default function AboutPage() {
       <section className="page-container mt-24 md:mt-32 mb-20">
         <div className="swiss-grid">
           <div className="col-span-4 md:col-span-8 lg:col-span-9">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-medium tracking-tight text-[#111111] leading-tight mb-8">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium tracking-tight text-[#313031] leading-tight mb-8">
               We are an independent digital studio built for cinema.
             </h1>
           </div>
@@ -29,7 +29,7 @@ export default function AboutPage() {
                 Our Story
               </h2>
             </div>
-            <div className="col-span-4 md:col-span-6 lg:col-span-7 flex flex-col gap-6 text-lg md:text-xl text-[#111111] leading-relaxed">
+            <div className="col-span-4 md:col-span-6 lg:col-span-7 flex flex-col gap-6 text-base md:text-lg text-[#313031] leading-relaxed">
               <p>
                 Webanox was co-founded by two best friends with a shared belief: digital products should be crafted with the same attention to detail as the physical experiences they support.
               </p>
@@ -74,7 +74,7 @@ export default function AboutPage() {
                 }
               ].map((value) => (
                 <div key={value.title} className="flex flex-col gap-3">
-                  <h3 className="text-lg font-medium text-[#111111]">{value.title}</h3>
+                  <h3 className="text-base font-medium text-[#313031]">{value.title}</h3>
                   <p className="text-[#686868] leading-relaxed text-sm">{value.desc}</p>
                 </div>
               ))}
@@ -85,7 +85,7 @@ export default function AboutPage() {
 
       {/* CTA */}
       <section className="page-container mt-32 text-center">
-        <h2 className="text-3xl md:text-4xl font-medium tracking-tight text-[#111111] mb-8">
+        <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-[#313031] mb-8">
           Let&apos;s build something great together.
         </h2>
         <LinkButton href="/contact" size="lg">
