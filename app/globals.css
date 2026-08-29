@@ -10,8 +10,8 @@
   --color-strong-border: #BDBDBD;
   --color-accent: #A41822;
 
-  --font-sans: var(--font-michroma), "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-tagline: var(--font-b612), sans-serif;
+  --font-sans: var(--font-b612), "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-michroma), "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 :root {
@@ -19,12 +19,16 @@
   --foreground: #313031;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply antialiased selection:bg-[#313031] selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
 }
 
 /* Swiss layout utilities */
