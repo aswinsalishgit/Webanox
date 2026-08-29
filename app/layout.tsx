@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Michroma } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
-const outfit = Outfit({
-  variable: "--font-outfit",
+const michroma = Michroma({
+  weight: "400", // Michroma only has 400 weight on Google Fonts
+  variable: "--font-michroma",
   subsets: ["latin"],
 });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${outfit.variable}`}>
+    <html lang="en" className={`${michroma.variable}`}>
       <body className="min-h-screen flex flex-col pt-16">
         <Header />
         <main className="flex-grow">{children}</main>
