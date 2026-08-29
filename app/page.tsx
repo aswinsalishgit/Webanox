@@ -15,7 +15,7 @@ export default function Home() {
             <span className="text-xs font-semibold uppercase tracking-widest text-[#686868] mb-6">
               Webanox Studio
             </span>
-            <h1 className="text-5xl md:text-7xl lg:text-[100px] leading-[1.1] font-medium tracking-tight text-[#111111] mb-8">
+            <h1 className="text-4xl md:text-6xl lg:text-[75px] leading-[1.2] font-medium tracking-tight text-[#313031] mb-8">
               Digital systems for modern cinema.
             </h1>
             <p className="text-lg md:text-xl text-[#686868] max-w-2xl leading-relaxed mb-12">
@@ -37,7 +37,7 @@ export default function Home() {
       {/* Featured Work Section */}
       <section className="page-container">
         <div className="flex justify-between items-end mb-12 border-b border-[#DCDCDC] pb-6">
-          <h2 className="text-2xl md:text-3xl font-medium tracking-tight text-[#111111]">
+          <h2 className="text-xl md:text-2xl font-medium tracking-tight text-[#313031]">
             Selected Work
           </h2>
           <LinkButton href="/work" variant="link" className="hidden md:flex gap-2 p-0 h-auto">
@@ -66,7 +66,7 @@ export default function Home() {
           ].map((item) => (
             <div key={item.id} className="col-span-4 md:col-span-4 lg:col-span-3 border-t border-[#DCDCDC] pt-6 mb-8 lg:mb-0">
               <div className="text-xs text-[#999999] mb-4">{item.id}</div>
-              <h3 className="text-xl font-medium text-[#111111] mb-2">{item.title}</h3>
+              <h3 className="text-lg font-medium text-[#313031] mb-2">{item.title}</h3>
               <p className="text-[#686868] text-sm leading-relaxed">{item.desc}</p>
             </div>
           ))}
@@ -74,10 +74,10 @@ export default function Home() {
       </section>
 
       {/* Specialization Section */}
-      <section className="bg-[#111111] text-[#F7F7F5] py-32">
+      <section className="bg-[#313031] text-[#F7F7F5] py-32">
         <div className="page-container swiss-grid">
           <div className="col-span-4 md:col-span-6 lg:col-span-8">
-            <h2 className="text-4xl md:text-5xl lg:text-7xl font-medium tracking-tight mb-8">
+            <h2 className="text-3xl md:text-4xl lg:text-6xl font-medium tracking-tight mb-8">
               Built around the business of cinema.
             </h2>
             <p className="text-[#999999] text-lg md:text-xl max-w-2xl leading-relaxed">
@@ -97,11 +97,11 @@ export default function Home() {
             <div key={step} className="flex flex-col md:flex-row md:items-center justify-between py-8 border-b border-[#DCDCDC] group">
               <div className="flex items-center gap-8 mb-4 md:mb-0">
                 <span className="text-sm text-[#999999]">0{i + 1}</span>
-                <h3 className="text-3xl md:text-5xl font-medium tracking-tight text-[#111111] group-hover:text-[#686868] transition-colors">
+                <h3 className="text-2xl md:text-4xl font-medium tracking-tight text-[#313031] group-hover:text-[#686868] transition-colors">
                   {step}
                 </h3>
               </div>
-              <ArrowRight size={24} className="text-[#DCDCDC] md:text-[#111111] opacity-0 md:opacity-100 group-hover:translate-x-4 transition-all duration-300" />
+              <ArrowRight size={24} className="text-[#DCDCDC] md:text-[#313031] opacity-0 md:opacity-100 group-hover:translate-x-4 transition-all duration-300" />
             </div>
           ))}
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
               Studio
             </h2>
             <div className="max-w-3xl">
-              <p className="text-2xl md:text-4xl font-medium tracking-tight leading-snug text-[#111111]">
+              <p className="text-xl md:text-3xl font-medium tracking-tight leading-snug text-[#313031]">
                 Webanox is a small, independent studio combining technical development and design craft. We work directly with our clients from concept to code.
               </p>
               <div className="mt-8">
@@ -130,7 +130,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="page-container text-center pt-16">
-        <h2 className="text-4xl md:text-6xl font-medium tracking-tight text-[#111111] mb-12 max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-[#313031] mb-12 max-w-4xl mx-auto leading-tight">
           Have a cinema that deserves a better digital experience?
         </h2>
         <LinkButton href="/contact" size="lg">
