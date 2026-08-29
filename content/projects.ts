@@ -22,6 +22,7 @@ export const projects: Project[] = [
     category: "Websites",
     services: ["Website Design", "Frontend Development", "Ticketing Integration"],
     year: "2024",
+    coverImage: "/projects/Project1.png",
     description: "A complete digital overhaul for a local independent cinema, focusing on seamless ticketing and premium brand presentation.",
     featured: true,
     challenge: "The cinema's previous website was outdated, slow, and lacked a cohesive brand identity. Customers struggled with finding showtimes and the ticketing process was disjointed.",
